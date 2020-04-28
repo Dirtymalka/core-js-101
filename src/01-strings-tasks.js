@@ -276,7 +276,6 @@ function getCardId(/* value */) {
   throw new Error('Not implemented');
 }
 
-
 module.exports = {
   concatenateStrings,
   getStringLength,
