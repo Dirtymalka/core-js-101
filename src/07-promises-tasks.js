@@ -102,12 +102,13 @@ function getFastestPromise(array) {
  *    });
  *
  */
-function chainPromises(array, action) {
-  const newArr = Promise.allSettled(array);
-  console.log(newArr);
-  const a = newArr.then((result) => result.reduce((acc, item) => action(item, acc), 0));
-  console.log(a);
-  return a;
+function chainPromises(/* array, action */) {
+  throw new Error('Not implemented');
+  // const newArr = Promise.allSettled(array);
+  // console.log(newArr);
+  // const a = newArr.then((result) => result.reduce((acc, item) => action(item, acc), 0));
+  // console.log(a);
+  // return a;
 }
 
 module.exports = {
