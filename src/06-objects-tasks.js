@@ -204,9 +204,8 @@ const cssSelectorBuilder = {
     return this;
   },
 
-  combine(selector1, combinator, selector2) {
-    console.log(selector2);
-    console.log(selector1);
+  combine(...args) {
+    const combinator = args[1];
     this.combinators.push(` ${combinator} `);
     return this;
   },
